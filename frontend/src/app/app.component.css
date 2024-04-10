@@ -1,0 +1,9 @@
+.container-a {
+  max-width: 100%;
+  background: #212529 !important;
+}
+
+.navbar-brand {
+  color: white;
+  font-weight: bold;
+}
