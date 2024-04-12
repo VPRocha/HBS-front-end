@@ -1,16 +1,53 @@
-<main class="container-a">
-  <div class="container py-4 ">
-    <header class="pb-3 mb-4 border-bottom ">
-        <div class="container-fluid">
-          <a class="navbar-brand py-10" href="#">
-            <img src="assets/hbs.svg" alt="Hotel Booking Store" width="32" height="32">
-            HOTEL BOOKING STORE
-          </a>
-        </div>
-    </header>
+<div class="navbar navbar-dark bg-dark shadow-sm fixed-top">
+  <header class="container">
+    <a href="#" class="navbar-brand d-flex align-items-center">
+      <svg src="assets/hbs.svg" alt="Hotel Booking Store" width="20" height="20"></svg>
+      <strong>HBS</strong>
+    </a>
 
-    <!-- <footer class="pt-3 mt-4 text-body-secondary border-top">
-      © 2024
-    </footer> -->
+  </header>
+</div>
+
+<div class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5" tabindex="-1" role="dialog" id="modalSignin">
+  <div role="document">
+    <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+      <div class="row align-items-center g-lg-5 py-5">
+
+        <div class="col-md-10 mx-auto col-lg-5">
+          <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="name" formControlName="name" placeholder="Name">
+              <label for="name">Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="email" formControlName="email" placeholder="name@example.com">
+              <label for="email">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control" id="password" formControlName="password" placeholder="Password">
+              <label for="password">Password</label>
+            </div>
+            <button type="submit" class="w-100 btn btn-lg btn-primary">Sign up</button>
+            <hr class="my-4">
+            <small class="text-body-secondary">By clicking Sign up, you agree to the terms of use.</small>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
-</main>
+</div>
+
+<div class="b-example-divider"></div>
+
+<div class="container">
+  <footer class="py-1 my-3">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contact</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+    </ul>
+    <p class="text-center text-body-secondary">© 2024 Company, Inc</p>
+  </footer>
+</div>
+
