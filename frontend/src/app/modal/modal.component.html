@@ -3,7 +3,32 @@
   <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss('Cross click')"></button>
 </div>
 <div class="modal-body">
-  <p>{{ title }}!</p>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Hotel</th>
+        <th scope="col">Saldo</th>
+        <th scope="col">Cashback</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Tropical Hotel</td>
+        <td>50 horas</td>
+        <td><button type="button"  class="btn btn-outline-success">Usar Cashback</button></td>
+      </tr>
+      <tr>
+        <td>Blue Tree Hotel</td>
+        <td>20 horas</td>
+        <td><button type="button"  class="btn btn-outline-success">Usar Cashback</button></td>
+      </tr>
+      <tr>
+        <td>Quality Hotel</td>
+        <td>50 horas</td>
+        <td><button type="button"  class="btn btn-outline-success">Usar Cashback</button></td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 <div class="modal-footer">
   <button type="button" class="btn btn-outline-primary" (click)="activeModal.close('Close click')">Close</button>
