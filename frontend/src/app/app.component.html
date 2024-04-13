@@ -4,7 +4,16 @@
       <svg src="assets/hbs.svg" alt="Hotel Booking Store" width="20" height="20"></svg>
       <strong>HBS</strong>
     </a>
-    <button type="button" class="btn btn-primary mt-auto"><strong>LOGIN</strong></button>
+    <button type="button" class="btn btn-primary mt-auto" *ngIf="!isRegisterPageHotel && !isRegisterPageReserve" (click)="openLoginOrRegister()">
+      <strong>{{ buttonText }}</strong>
+    </button>
+
+      <div ngbDropdown *ngIf="isRegisterPageHotel || isRegisterPageReserve">
+        <button type="button" class="btn btn-primary" id="dropdownConfig" ngbDropdownToggle><strong>Perfil</strong></button>
+        <div ngbDropdownMenu aria-labelledby="dropdownConfig">
+        <button ngbDropdownItem (click)="open()">Meu Saldo</button>
+      </div>
+    </div>
   </header>
 </div>
 <router-outlet></router-outlet>

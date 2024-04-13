@@ -5,13 +5,15 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { AppComponent } from './app.component';
 import { AuthGuardService } from './service/auth-guard.service';
+import { ReserveComponent } from './reserve/reserve.component';
 
 export const routes: Routes = [
-  { path: '', component: LoginComponent },
+  { path: '', component: SignupComponent },
   { path: 'hotel', component: HotelComponent},
   //{ path: 'hotel', component: HotelComponent, canActivate: [AuthGuardService]},
   { path: 'login', component: LoginComponent},
   { path: 'signup', component: SignupComponent},
+  { path: 'reserve', component: ReserveComponent},
   { path: '**', redirectTo: ''}
 ];
 
