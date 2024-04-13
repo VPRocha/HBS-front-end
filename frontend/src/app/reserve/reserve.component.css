@@ -2,3 +2,9 @@
   padding-top: 5rem !important;
   padding-bottom: 3rem !important;
 }
+.card-cover {
+  background-image: url('https://cf.bstatic.com/xdata/images/hotel/max1024x768/358086382.jpg?k=929255443a40d7fb887e49861964665a355a480faa463b066c0b3a68494939a7&o=&hp=1') !important;
+  background-position: center; /* Optional: Center the image */
+  /* Add this line */
+  object-fit: cover;
+}

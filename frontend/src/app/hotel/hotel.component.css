@@ -2,3 +2,22 @@
   padding-top: 5rem !important;
   padding-bottom: 3rem !important;
 }
+
+.card-cover {
+  background-image: url('https://cf.bstatic.com/xdata/images/hotel/max1024x768/358086382.jpg?k=929255443a40d7fb887e49861964665a355a480faa463b066c0b3a68494939a7&o=&hp=1') !important;
+  background-position: center; /* Optional: Center the image */
+  /* Add this line */
+  object-fit: cover;
+}
+.card-cover-1 {
+  background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-s/02/37/89/84/fachada.jpg?w=400&h=-1&s=1') !important;
+  background-position: center; /* Optional: Center the image */
+  /* Add this line */
+  object-fit: cover;
+}
+.card-cover-2 {
+  background-image: url('https://cf.bstatic.com/xdata/images/hotel/max1024x768/157826454.jpg?k=893480b8f5507e18707cbc79626741574856625312dd6e1d46176a3a6bf113f5&o=&hp=1') !important;
+  background-position: center; /* Optional: Center the image */
+  /* Add this line */
+  object-fit: cover;
+}

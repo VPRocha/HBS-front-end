@@ -10,7 +10,6 @@ export class ModalComponent {
   @Input() title!: string
 
   constructor(public activeModal: NgbActiveModal) {}
-
   closeModal() {
     this.activeModal.close('Modal closed');
   }
